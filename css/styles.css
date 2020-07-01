@@ -1,0 +1,68 @@
+html {
+  font-size: 62.5%;
+  font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #545ba3; }
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.804359) 17%, rgba(1, 1, 1, 0.571866) 44%, rgba(1, 1, 1, 0.249737) 67%, rgba(1, 1, 1, 0) 85%); }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    right: 0; }
+    .navbar ul li {
+      margin: 0 auto;
+      padding: 0 2rem; }
+      .navbar ul li a {
+        font-size: 3.5rem;
+        color: #949494; }
+      .navbar ul li a:hover {
+        color: white;
+        transform: scale(1.02, 1.02); }
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/welcome-bg-w1349.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
+  .welcome-section h1 {
+    font-size: 8rem;
+    color: white; }
+  .welcome-section p {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #d6d6d6; }
+
+@media only screen and (min-width: 1400px) {
+  .welcome-section {
+    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
+    .welcome-section h1 {
+      font-size: 9rem; }
+    .welcome-section p {
+      font-size: 5rem; } }
+
+@media only screen and (min-width: 1850px) {
+  .welcome-section {
+    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
+    .welcome-section h1 {
+      font-size: 10rem; }
+    .welcome-section p {
+      font-size: 5rem; } }
+
+.project-tile {
+  margin: 0 auto;
+  padding: 10px 5px;
+  object-fit: cover; }
+  .project-tile .link-image {
+    width: 350px; }

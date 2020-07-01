@@ -1,0 +1,110 @@
+// User Story #9: My portfolio should have at least one media query.
+// User Story #10: The height of the welcome section should be equal to the height of the viewport.
+// User Story #11: The navbar should always be at the top of the viewport.
+
+        //text-shadow: 5px 3px 5px #000000;
+
+
+// Colours
+
+$navbarLinearGradient: linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 17%, rgba(1,1,1,0.5718662464985995) 44%, rgba(1,1,1,0.2497373949579832) 67%, rgba(1,1,1,0) 85%);
+$welcomeSectionLinearGradient: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(61,60,60,1) 78%, rgba(98,98,98,1) 100%);
+$navbarFont: #949494;
+$welcomeSectionTitleFont: white;
+$welcomeSectionParagraphFont: #d6d6d6;
+$bodyBGColor: #545ba3;
+
+
+//mixins
+@mixin margin-zero($up-down, $left-right) {
+    margin: 0 auto;
+    padding: $up-down $left-right;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Times New Roman", Times, serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $bodyBGColor;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 10rem;
+    background: $navbarLinearGradient;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        li {
+            @include margin-zero(0, 2rem);
+            a {
+                font-size: 3.5rem;
+                color: $navbarFont;
+            }
+            a:hover {
+                color: $welcomeSectionTitleFont;
+                transform: scale(1.02, 1.02);
+            }
+        }
+    }
+
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/welcome-bg-w1349.png") no-repeat left top, $welcomeSectionLinearGradient;
+    h1 {
+        font-size: 8rem;
+        color: $welcomeSectionTitleFont;
+    }
+    p {
+        font-size: 4rem;
+        font-weight: 300;
+        color: $welcomeSectionParagraphFont;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .welcome-section {
+        background: url("../img/welcome-bg-w1810.png") no-repeat left top, $welcomeSectionLinearGradient;
+        h1 {
+            font-size: 9rem;
+        }
+        p {
+            font-size: 5rem;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1850px) {
+    .welcome-section {
+        background: url("../img/welcome-bg-w2713.png") no-repeat left top, $welcomeSectionLinearGradient;
+        h1 {
+            font-size: 10rem;
+        }
+        p {
+            font-size: 5rem;
+        }
+    }
+}
+
+.project-tile{
+    @include margin-zero(10px, 5px);
+    object-fit: cover;
+    .link-image {
+        width: 350px;
+    }
+}
