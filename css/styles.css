@@ -11,7 +11,8 @@ body {
   top: 0px;
   width: 100%;
   height: 10rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.804359) 17%, rgba(1, 1, 1, 0.571866) 44%, rgba(1, 1, 1, 0.249737) 67%, rgba(1, 1, 1, 0) 85%); }
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.804359) 17%, rgba(1, 1, 1, 0.571866) 44%, rgba(1, 1, 1, 0.249737) 67%, rgba(1, 1, 1, 0) 85%);
+  z-index: 1; }
   .navbar ul {
     display: flex;
     flex-direction: row;
@@ -22,7 +23,7 @@ body {
       margin: 0 auto;
       padding: 0 2rem; }
       .navbar ul li a {
-        font-size: 3.5rem;
+        font-size: 3rem;
         color: #949494; }
       .navbar ul li a:hover {
         color: white;
@@ -33,6 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   width: 100%;
   height: 100vh;
   background: url("../img/welcome-bg-w1349.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
@@ -44,25 +46,65 @@ body {
     font-weight: 300;
     color: #d6d6d6; }
 
+.aboutMe {
+  margin: 0 auto;
+  padding: 7rem 100px;
+  width: 100%;
+  height: 100vh;
+  text-align: justify;
+  background: linear-gradient(170deg, #545ba3 50%, #c93232 50%); }
+  .aboutMe .row {
+    height: 100%; }
+  .aboutMe h2 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 3rem; }
+  .aboutMe p {
+    color: white;
+    font-size: 2.5rem; }
+
+.projects {
+  margin: 0 auto;
+  padding: 7rem 100px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(168deg, #c93232 50%, #545ba3 50%); }
+  .projects h2 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 3rem; }
+  .projects p {
+    color: white;
+    font-size: 2.3rem; }
+  .projects .project-tile {
+    margin: 0 auto;
+    padding: 10px 5px;
+    object-fit: cover; }
+    .projects .project-tile .link-image {
+      width: 350px; }
+
+.hiddenFromPage {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 @media only screen and (min-width: 1400px) {
+  html {
+    font-size: 70%; }
   .welcome-section {
-    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
-    .welcome-section h1 {
-      font-size: 9rem; }
-    .welcome-section p {
-      font-size: 5rem; } }
+    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
 
 @media only screen and (min-width: 1850px) {
+  html {
+    font-size: 80%; }
   .welcome-section {
-    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
-    .welcome-section h1 {
-      font-size: 10rem; }
-    .welcome-section p {
-      font-size: 5rem; } }
+    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
 
-.project-tile {
-  margin: 0 auto;
-  padding: 10px 5px;
-  object-fit: cover; }
-  .project-tile .link-image {
-    width: 350px; }
+@media only screen and (min-width: 2300px) {
+  html {
+    font-size: 100%; } }

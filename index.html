@@ -24,24 +24,39 @@
             </ul>
         </nav>
 
-        <!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
-        <section id="welcome-section" class="welcome-section">
-            <!-- User Story #2: The welcome section should have an h1 element that contains text. -->
-            <h1>Juan M. Choy</h1>
-            <p>Front End Web Developer</p>
-        </section>
 
-        <main class="container">
+        <main>
+            <!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
+            <section id="welcome-section" class="welcome-section">
+                <!-- User Story #2: The welcome section should have an h1 element that contains text. -->
+                <h1 id="title-name" class="hiddenFromPage">Juan M. Choy</h1>
+                <p id="welcome-paragraph" class="hiddenFromPage">Front End Web Developer</p>
+            </section>
 
-            <section id="#about"></section>
+
+
+            <section id="about" class="aboutMe">
+                <h2>About Me</h2>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-5 align-self-start" id="paragraph1">
+                        <p>I strongly believe that I can help you achieve the web design you are looking for. Coding has always been one of my passions and with it, I like to look for creative and innovative approaches of implementing solutions.</p>
+                    </div>
+                    <div class="col-12 col-lg-5 align-self-center" id="paragraph2">
+                        <p>I graduated in Mechanical Engineering in 2016 and have been working in several projects related with the Oil&Gas industry and Fire Protection Systems. This background provides me with a different perspective for achieving good results.</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- User Story #3: My portfolio should have a projects section with an id of projects. -->
-            <section id="projects">
+            <section id="projects" class="projects">
                 <!-- User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project. -->
                 <!-- User Story #5: The projects section should contain at least one link to a project. -->
                 
-                <h2>Take a look at my work!</h2>
-                <p>These are some of my projects, I hope you enjoy them.</p>
+                <h2>Projects</h2>
+                <div class="ml-5">
+                    <p>Take a look at my work!</p>
+                    <p class="ml-5">These are some of my projects, I hope you enjoy them.</p>
+                </div>
 
                 <div>
                     <div class="row">
@@ -99,6 +114,8 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="scripts/jquery-3.5.1.js"></script>
+        <script src="scripts/animations.js"></script>
         <!-- endbuild -->
     </body>
 </html>
