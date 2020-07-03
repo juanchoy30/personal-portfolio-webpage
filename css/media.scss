@@ -11,7 +11,7 @@
             font-size: 2rem;
         }
     .projects {
-        @include margin-zero($paddingTitle, 2rem);
+        @include margin-zero($paddingTitle, 1rem);
         .project-tile{
             @include margin-zero(10px, 0);
             object-fit: cover;
@@ -27,14 +27,14 @@
         font-size: 30%;
     }
     .welcome-section {
-        @include margin-zero(0, 3rem);
+        @include margin-zero(0, 2rem);
         text-align: start;
         h1 {
             font-size: 5rem;
         }
     }
     .aboutMe {
-        @include margin-zero($paddingTitle, 3rem);
+        @include margin-zero($paddingTitle, 2rem);
         p {
             font-size: 2.3rem;
         }
