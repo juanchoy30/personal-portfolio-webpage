@@ -1,0 +1,117 @@
+@import 'variables.scss';
+
+// Cellphone screens
+
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+    .aboutMe {
+        p {
+            font-size: 2rem;
+        }
+    .projects {
+        @include margin-zero($paddingTitle, 2rem);
+        .project-tile{
+            @include margin-zero(10px, 0);
+            object-fit: cover;
+            .link-image {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 30%;
+    }
+    .welcome-section {
+        @include margin-zero(0, 3rem);
+        text-align: start;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    .aboutMe {
+        @include margin-zero($paddingTitle, 3rem);
+        p {
+            font-size: 2.3rem;
+        }
+    }
+    .projects {
+        p {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+
+// Tablet Screens
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-800.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        @include margin-zero($paddingTitle, 6rem);
+    }
+    .projects {
+        @include margin-zero($paddingTitle, 6rem);
+        .project-tile{
+            @include margin-zero(10px, 5px);
+            object-fit: cover;
+            .link-image {
+                width: 200px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+// Big Screens
+@media only screen and (min-width: 1400px) {
+    html {
+        font-size: 68%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-w1810.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+
+}
+
+@media only screen and (min-width: 1650px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 80%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-w2713.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+    html {
+        font-size: 100%;
+    }
+}

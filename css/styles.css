@@ -1,7 +1,9 @@
 html {
   font-size: 62.5%;
-  font-family: "Times New Roman", Times, serif;
   scroll-behavior: smooth; }
+
+* {
+  font-family: Arial, Helvetica, sans-serif !important; }
 
 body {
   background-color: #545ba3; }
@@ -39,10 +41,10 @@ body {
   height: 100vh;
   background: url("../img/welcome-bg-w1349.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
   .welcome-section h1 {
-    font-size: 8rem;
+    font-size: 7.5rem;
     color: white; }
   .welcome-section p {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     color: #d6d6d6; }
 
@@ -75,13 +77,87 @@ body {
     margin-bottom: 3rem; }
   .projects p {
     color: white;
-    font-size: 2.3rem; }
+    font-size: 2.5rem; }
   .projects .project-tile {
     margin: 0 auto;
     padding: 10px 5px;
     object-fit: cover; }
     .projects .project-tile .link-image {
       width: 350px; }
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 50%; }
+  .projects {
+    margin: 0 auto;
+    padding: 7rem 2rem; }
+    .projects .project-tile {
+      margin: 0 auto;
+      padding: 10px 0;
+      object-fit: cover; }
+      .projects .project-tile .link-image {
+        width: 150px; } }
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 30%; }
+  .welcome-section {
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-align: start; }
+    .welcome-section h1 {
+      font-size: 5rem; }
+  .aboutMe {
+    margin: 0 auto;
+    padding: 7rem 3rem; }
+    .aboutMe p {
+      font-size: 2.3rem; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%; }
+  .welcome-section {
+    background: url("../img/welcome-bg-800.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
+  .aboutMe {
+    margin: 0 auto;
+    padding: 7rem 6rem; }
+  .projects {
+    margin: 0 auto;
+    padding: 7rem 6rem; }
+    .projects .project-tile {
+      margin: 0 auto;
+      padding: 10px 5px;
+      object-fit: cover; }
+      .projects .project-tile .link-image {
+        width: 200px; } }
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 50%; } }
+
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 68%; }
+  .welcome-section {
+    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
+
+@media only screen and (min-width: 1650px) {
+  html {
+    font-size: 75%; } }
+
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 80%; }
+  .welcome-section {
+    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
+
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 90%; } }
+
+@media only screen and (min-width: 2300px) {
+  html {
+    font-size: 100%; } }
 
 .hiddenFromPage {
   position: absolute;
@@ -92,19 +168,3 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
-
-@media only screen and (min-width: 1400px) {
-  html {
-    font-size: 70%; }
-  .welcome-section {
-    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
-
-@media only screen and (min-width: 1850px) {
-  html {
-    font-size: 80%; }
-  .welcome-section {
-    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
-
-@media only screen and (min-width: 2300px) {
-  html {
-    font-size: 100%; } }

@@ -1,0 +1,20 @@
+// Colours
+
+$navbarLinearGradient: linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 17%, rgba(1,1,1,0.5718662464985995) 44%, rgba(1,1,1,0.2497373949579832) 67%, rgba(1,1,1,0) 85%);
+$welcomeSectionLinearGradient: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(61,60,60,1) 78%, rgba(98,98,98,1) 100%);
+$aboutSectionLinearGradient: linear-gradient(170deg, rgba(84,91,163,1) 50%, rgba(201,50,50,1) 50%);
+$projectSextionLinearGradient: linear-gradient(168deg, rgba(201,50,50,1) 50%, rgba(84,91,163,1) 50%);
+$navbarFont: #949494;
+$welcomeSectionTitleFont: white;
+$welcomeSectionParagraphFont: #d6d6d6;
+$bodyBGColor: #545ba3;
+
+$paddingTitle: 7rem;
+$SubtitleSizes: 5rem;
+
+
+//mixins
+@mixin margin-zero($up-down, $left-right) {
+    margin: 0 auto;
+    padding: $up-down $left-right;
+}
