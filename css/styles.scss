@@ -2,12 +2,40 @@
 // User Story #10: The height of the welcome section should be equal to the height of the viewport.
 // User Story #11: The navbar should always be at the top of the viewport.
 
-        //text-shadow: 5px 3px 5px #000000;
-@import 'variables.scss';
+// Colours
+
+$navbarLinearGradient: linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 17%, rgba(1,1,1,0.5718662464985995) 44%, rgba(1,1,1,0.2497373949579832) 67%, rgba(1,1,1,0) 85%);
+$welcomeSectionLinearGradient: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(61,60,60,1) 78%, rgba(98,98,98,1) 100%);
+$aboutSectionLinearGradient: linear-gradient(170deg, rgba(84,91,163,1) 50%, rgba(201,50,50,1) 50%);
+$projectSextionLinearGradient: linear-gradient(168deg, rgba(201,50,50,1) 50%, rgba(84,91,163,1) 50%);
+$aboutSectionBgColor: #570300;
+$projectSectionBgColor: #004b57;
+$navbarFont: #949494;
+$welcomeSectionTitleFont: white;
+$welcomeSectionParagraphFont: #d6d6d6;
+$bodyBGColor: #545ba3;
+
+$paddingTitle: 7rem;
+$SubtitleSizes: 5rem;
+
+
+//mixins
+@mixin margin-zero($up-down, $left-right) {
+    margin: 0 auto;
+    padding: $up-down $left-right;
+}
+
+
+//mixins
+@mixin margin-zero($up-down, $left-right) {
+    margin: 0 auto;
+    padding: $up-down $left-right;
+}
 
 html {
-    font-size: 62.5%;
+    font-size: 60%;
     scroll-behavior: smooth;
+    text-shadow: 2px 2px 29px rgba(0, 0, 0, 1);
 }
 
 * {
@@ -16,6 +44,9 @@ html {
 
 body {
     background-color: $bodyBGColor;
+    a {
+        text-decoration: none !important;
+    }
 }
 
 .navbar {
@@ -36,6 +67,7 @@ body {
             a {
                 font-size: 3rem;
                 color: $navbarFont;
+                transition: 0.3s;
             }
             a:hover {
                 color: $welcomeSectionTitleFont;
@@ -70,7 +102,7 @@ body {
     width: 100%;
     height: 100vh;
     text-align: justify;
-    background: $aboutSectionLinearGradient;
+    background: url("../img/hiclipart.com2.png") no-repeat right top, $aboutSectionBgColor;
     .row {
         height: 100%;
     }
@@ -88,8 +120,26 @@ body {
 .projects {
     @include margin-zero($paddingTitle, 100px);
     width: 100%;
-    height: 100vh;
-    background: $projectSextionLinearGradient;
+    height: 100%;
+    background: $projectSectionBgColor;
+    .card {
+        background: #176571;
+        color: white;
+        transition: 0.3s;
+        opacity: 0.85;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        .card-body h3 {
+            font-size: 2rem;
+        }
+    }
+    .card:hover {
+        transform: scale(1.02, 1.02);
+        z-index: 0.5;
+        opacity: 1;
+        background: #38808b;
+    }
     h2 {
         font-size: $SubtitleSizes;
         color: $welcomeSectionTitleFont;
@@ -99,14 +149,168 @@ body {
         color: $welcomeSectionTitleFont;
         font-size: 2.5rem;
     }
-    .project-tile{
-        @include margin-zero(10px, 5px);
-        object-fit: cover;
+    .project-tile {
+        margin: 20px 0px;
+        justify-content: center;
+        align-items: center;
         .link-image {
             width: 350px;
+        }
+        .see-more {
+            font-size: 4.5rem;
+            color: white;
+            transition: 0.3s;
+            opacity: 0.5;
+        }
+        .see-more:hover {
+            transform: scale(1.02, 1.02);
+            z-index: 0.5;
+            opacity: 1;
         }
     }
 }
 
-@import 'media.scss';
-@import 'hidden.scss';
+// Cellphone screens
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+    .aboutMe {
+        p {
+            font-size: 2rem;
+        }
+    }
+    .projects {
+        @include margin-zero($paddingTitle, 2rem);
+        .project-tile{
+            @include margin-zero(10px, 0);
+            object-fit: cover;
+            .link-image {
+                width: 150px;
+                }
+            }
+        }
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 30%;
+    }
+    .welcome-section {
+        @include margin-zero(0, 3rem);
+        text-align: start;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    .aboutMe {
+        @include margin-zero($paddingTitle, 3rem);
+        background-image: url("../img/about-little-screens-500.png") no-repeat left top !important;
+        p {
+            font-size: 2.3rem;
+        }
+    }
+    .projects {
+        p {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+
+// Tablet Screens
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-800.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        @include margin-zero($paddingTitle, 6rem);
+        background-image: url("../img/about-little-screens-800.png") !important;
+        }
+    .projects {
+        @include margin-zero($paddingTitle, 6rem);
+        .project-tile{
+            @include margin-zero(10px, 5px);
+            object-fit: cover;
+            .link-image {
+                width: 200px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+    .aboutMe {
+        background: url("../img/about-little-screens-1200.png") no-repeat left top, $aboutSectionBgColor;
+    }
+}
+
+// Big Screens
+@media only screen and (min-width: 1400px) {
+    html {
+        font-size: 68%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-w1810.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com700.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    html {
+        font-size: 75%;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com800.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 80%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-w2713.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com900.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 90%;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com1000.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+    html {
+        font-size: 100%;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com1100.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+.hiddenFromPage {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden; }

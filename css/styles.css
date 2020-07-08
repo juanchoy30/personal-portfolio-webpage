@@ -1,12 +1,15 @@
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+  font-size: 60%;
+  scroll-behavior: smooth;
+  text-shadow: 2px 2px 29px black; }
 
 * {
   font-family: Arial, Helvetica, sans-serif !important; }
 
 body {
   background-color: #545ba3; }
+  body a {
+    text-decoration: none !important; }
 
 .navbar {
   position: fixed;
@@ -26,7 +29,8 @@ body {
       padding: 0 2rem; }
       .navbar ul li a {
         font-size: 3rem;
-        color: #949494; }
+        color: #949494;
+        transition: 0.3s; }
       .navbar ul li a:hover {
         color: white;
         transform: scale(1.02, 1.02); }
@@ -54,7 +58,7 @@ body {
   width: 100%;
   height: 100vh;
   text-align: justify;
-  background: linear-gradient(170deg, #545ba3 50%, #c93232 50%); }
+  background: url("../img/hiclipart.com2.png") no-repeat right top, #570300; }
   .aboutMe .row {
     height: 100%; }
   .aboutMe h2 {
@@ -69,8 +73,23 @@ body {
   margin: 0 auto;
   padding: 7rem 100px;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(168deg, #c93232 50%, #545ba3 50%); }
+  height: 100%;
+  background: #004b57; }
+  .projects .card {
+    background: #176571;
+    color: white;
+    transition: 0.3s;
+    opacity: 0.85;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; }
+    .projects .card .card-body h3 {
+      font-size: 2rem; }
+  .projects .card:hover {
+    transform: scale(1.02, 1.02);
+    z-index: 0.5;
+    opacity: 1;
+    background: #38808b; }
   .projects h2 {
     font-size: 5rem;
     color: white;
@@ -79,15 +98,26 @@ body {
     color: white;
     font-size: 2.5rem; }
   .projects .project-tile {
-    margin: 0 auto;
-    padding: 10px 5px;
-    object-fit: cover; }
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center; }
     .projects .project-tile .link-image {
       width: 350px; }
+    .projects .project-tile .see-more {
+      font-size: 4.5rem;
+      color: white;
+      transition: 0.3s;
+      opacity: 0.5; }
+    .projects .project-tile .see-more:hover {
+      transform: scale(1.02, 1.02);
+      z-index: 0.5;
+      opacity: 1; }
 
 @media only screen and (max-width: 375px) {
   html {
     font-size: 50%; }
+  .aboutMe p {
+    font-size: 2rem; }
   .projects {
     margin: 0 auto;
     padding: 7rem 2rem; }
@@ -109,9 +139,12 @@ body {
       font-size: 5rem; }
   .aboutMe {
     margin: 0 auto;
-    padding: 7rem 3rem; }
+    padding: 7rem 3rem;
+    background-image: url("../img/about-little-screens-500.png") no-repeat left top !important; }
     .aboutMe p {
-      font-size: 2.3rem; } }
+      font-size: 2.3rem; }
+  .projects p {
+    font-size: 2.3rem; } }
 
 @media only screen and (max-width: 768px) {
   html {
@@ -120,7 +153,8 @@ body {
     background: url("../img/welcome-bg-800.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
   .aboutMe {
     margin: 0 auto;
-    padding: 7rem 6rem; }
+    padding: 7rem 6rem;
+    background-image: url("../img/about-little-screens-800.png") !important; }
   .projects {
     margin: 0 auto;
     padding: 7rem 6rem; }
@@ -133,31 +167,43 @@ body {
 
 @media only screen and (max-width: 1024px) {
   html {
-    font-size: 50%; } }
+    font-size: 55%; }
+  .aboutMe {
+    background: url("../img/about-little-screens-1200.png") no-repeat left top, #570300; } }
 
 @media only screen and (min-width: 1400px) {
   html {
     font-size: 68%; }
   .welcome-section {
-    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
+    background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
+  .aboutMe {
+    background: url("../img/hiclipart.com700.png") no-repeat right bottom, #570300; } }
 
 @media only screen and (min-width: 1650px) {
   html {
-    font-size: 75%; } }
+    font-size: 75%; }
+  .aboutMe {
+    background: url("../img/hiclipart.com800.png") no-repeat right bottom, #570300; } }
 
 @media only screen and (min-width: 1800px) {
   html {
     font-size: 80%; }
   .welcome-section {
-    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); } }
+    background: url("../img/welcome-bg-w2713.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
+  .aboutMe {
+    background: url("../img/hiclipart.com900.png") no-repeat right bottom, #570300; } }
 
 @media only screen and (min-width: 2000px) {
   html {
-    font-size: 90%; } }
+    font-size: 90%; }
+  .aboutMe {
+    background: url("../img/hiclipart.com1000.png") no-repeat right bottom, #570300; } }
 
 @media only screen and (min-width: 2300px) {
   html {
-    font-size: 100%; } }
+    font-size: 100%; }
+  .aboutMe {
+    background: url("../img/hiclipart.com1100.png") no-repeat right bottom, #570300; } }
 
 .hiddenFromPage {
   position: absolute;
