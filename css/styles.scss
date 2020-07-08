@@ -47,6 +47,15 @@ body {
     a {
         text-decoration: none !important;
     }
+    h2 {
+        font-size: $SubtitleSizes;
+        color: $welcomeSectionTitleFont;
+        margin-bottom: 3rem;
+    }
+    p {
+        color: $welcomeSectionTitleFont;
+        font-size: 2.5rem;
+    }
 }
 
 .navbar {
@@ -91,7 +100,7 @@ body {
         color: $welcomeSectionTitleFont;
     }
     p {
-        font-size: 3rem;
+        font-size: 3rem !important;
         font-weight: 300;
         color: $welcomeSectionParagraphFont;
     }
@@ -105,15 +114,6 @@ body {
     background: url("../img/hiclipart.com2.png") no-repeat right top, $aboutSectionBgColor;
     .row {
         height: 100%;
-    }
-    h2 {
-        font-size: $SubtitleSizes;
-        color: $welcomeSectionTitleFont;
-        margin-bottom: 3rem;
-    }
-    p {
-        color: $welcomeSectionTitleFont;
-        font-size: 2.5rem;
     }
 }
 
@@ -140,15 +140,6 @@ body {
         opacity: 1;
         background: #38808b;
     }
-    h2 {
-        font-size: $SubtitleSizes;
-        color: $welcomeSectionTitleFont;
-        margin-bottom: 3rem;
-    }
-    p {
-        color: $welcomeSectionTitleFont;
-        font-size: 2.5rem;
-    }
     .project-tile {
         margin: 20px 0px;
         justify-content: center;
@@ -167,6 +158,19 @@ body {
             z-index: 0.5;
             opacity: 1;
         }
+    }
+}
+
+.contact {
+    @include margin-zero($paddingTitle, 100px);
+    background: url("../img/welcome-bg-w1349.png") no-repeat left top, $welcomeSectionLinearGradient;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    height: 100vh;
+    p {
+        font-size: 5rem;
     }
 }
 
