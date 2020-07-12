@@ -3,13 +3,9 @@ html {
   scroll-behavior: smooth;
   text-shadow: 2px 2px 29px black; }
 
-* {
-  font-family: Arial, Helvetica, sans-serif !important; }
-
 body {
-  background-color: #545ba3; }
-  body a {
-    text-decoration: none !important; }
+  background-color: #545ba3;
+  font-family: Arial, Helvetica, sans-serif; }
   body h2 {
     font-size: 5rem;
     color: white;
@@ -55,7 +51,7 @@ body {
     font-size: 7.5rem;
     color: white; }
   .welcome-section p {
-    font-size: 3rem !important;
+    font-size: 3rem;
     font-weight: 300;
     color: #d6d6d6; }
 
@@ -94,6 +90,8 @@ body {
     margin: 20px 0px;
     justify-content: center;
     align-items: center; }
+    .projects .project-tile a {
+      text-decoration: none; }
     .projects .project-tile .link-image {
       width: 350px; }
     .projects .project-tile .see-more {
@@ -109,14 +107,41 @@ body {
 .contact {
   margin: 0 auto;
   padding: 7rem 100px;
-  background: url("../img/welcome-bg-w1349.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%);
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
+  background: url("../img/about-little-screens-1200.png") no-repeat left top, #1a1a1a;
   width: 100%;
   height: 100vh; }
   .contact p {
-    font-size: 5rem; }
+    font-size: 4.5rem; }
+
+.btn-group {
+  margin-top: 7rem; }
+  .btn-group a {
+    padding: 20px 30px;
+    font-size: 6rem;
+    color: white;
+    transition: 0.5s;
+    margin: 10px 40px;
+    border-radius: 10px;
+    opacity: .7;
+    border: 2px solid rgba(0, 0, 0, 0); }
+  .btn-group a:hover {
+    border: 2px solid rgba(0, 0, 0, 0.472);
+    transform: scale(1.04, 1.04);
+    opacity: 0.9;
+    z-index: 0.9;
+    -webkit-box-shadow: 6px 6px 13px 2px rgba(0, 0, 0, 0.79);
+    -moz-box-shadow: 6px 6px 13px 2px rgba(0, 0, 0, 0.79);
+    box-shadow: 6px 6px 13px 2px rgba(0, 0, 0, 0.79); }
+  .btn-group .linkedin:hover {
+    background-color: #007bb6; }
+  .btn-group .gitHub:hover {
+    background-color: #444; }
+  .btn-group .whatsapp:hover {
+    background-color: #25D366; }
+  .btn-group .codepen:hover {
+    background-color: #292b2c; }
+  .btn-group .mail:hover {
+    background-color: #d9534f; }
 
 @media only screen and (max-width: 375px) {
   html {
@@ -149,7 +174,13 @@ body {
     .aboutMe p {
       font-size: 2.3rem; }
   .projects p {
-    font-size: 2.3rem; } }
+    font-size: 2.3rem; }
+  .contact .btn-group {
+    margin-top: 6rem; }
+    .contact .btn-group a {
+      padding: 8px 10px !important;
+      margin: 0 !important;
+      font-size: 3.5rem !important; } }
 
 @media only screen and (max-width: 768px) {
   html {
@@ -168,7 +199,17 @@ body {
       padding: 10px 5px;
       object-fit: cover; }
       .projects .project-tile .link-image {
-        width: 200px; } }
+        width: 200px; }
+  .contact {
+    margin: 0 auto;
+    padding: 7rem 6rem; }
+    .contact p {
+      font-size: 3rem; }
+    .contact .btn-group {
+      margin-top: 6rem; }
+      .contact .btn-group a {
+        font-size: 4.5rem;
+        margin: 1.3rem; } }
 
 @media only screen and (max-width: 1024px) {
   html {
