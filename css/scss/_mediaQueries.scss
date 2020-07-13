@@ -1,0 +1,170 @@
+@import 'variables';
+
+
+// Cellphone screens
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+    .navbar {
+        ul {
+            li {
+                @include margin-zero(0, 1rem);
+                a {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    .aboutMe {
+        p {
+            font-size: 2rem;
+        }
+    }
+    .projects {
+        @include margin-zero($paddingTitle, 2rem);
+        .project-tile{
+            @include margin-zero(10px, 0);
+            object-fit: cover;
+            .link-image {
+                width: 150px;
+                }
+            }
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 30%;
+    }
+    .welcome-section {
+        @include margin-zero(0, 3rem);
+        text-align: start;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    .aboutMe {
+        @include margin-zero($paddingTitle, 3rem);
+        background-image: url("../img/about-little-screens-500.png") no-repeat left top !important;
+        p {
+            font-size: 2.3rem;
+        }
+    }
+    .projects {
+        p {
+            font-size: 2.3rem;
+        }
+    }
+    .contact {
+        .btn-group {
+            margin-top: 6rem;
+            a {
+                padding: 8px 10px !important;
+                margin: 0 !important;
+                font-size: 3.5rem !important;
+            }
+        }
+    }
+}
+
+
+// Tablet Screens
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-800.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        @include margin-zero($paddingTitle, 6rem);
+        background-image: url("../img/about-little-screens-800.png") !important;
+        }
+    .projects {
+        @include margin-zero($paddingTitle, 6rem);
+        .project-tile{
+            @include margin-zero(10px, 5px);
+            object-fit: cover;
+            .link-image {
+                width: 200px;
+            }
+        }
+    }
+    .contact {  
+        @include margin-zero($paddingTitle, 6rem);  
+        p {
+            font-size: 3rem;
+        }
+        .btn-group {
+            margin-top: 6rem;
+            a {
+                font-size: 4.5rem;
+                margin: 1.3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+    .aboutMe {
+        background: url("../img/about-little-screens-1200.png") no-repeat left top, $aboutSectionBgColor;
+    }
+}
+
+// Big Screens
+@media only screen and (min-width: 1400px) {
+    html {
+        font-size: 68%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-w1810.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com700.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    html {
+        font-size: 75%;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com800.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 80%;
+    }
+    .welcome-section {
+        background: url("../img/welcome-bg-w2713.png") no-repeat left top, $welcomeSectionLinearGradient;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com900.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 90%;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com1000.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+    html {
+        font-size: 100%;
+    }
+    .aboutMe {
+        background: url("../img/hiclipart.com1100.png") no-repeat right bottom, $aboutSectionBgColor;
+    }
+}

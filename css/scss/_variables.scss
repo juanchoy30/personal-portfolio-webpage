@@ -1,0 +1,24 @@
+$navbarLinearGradient: linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 17%, rgba(1,1,1,0.5718662464985995) 44%, rgba(1,1,1,0.2497373949579832) 67%, rgba(1,1,1,0) 85%);
+$welcomeSectionLinearGradient: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(61,60,60,1) 78%, rgba(98,98,98,1) 100%);
+$aboutSectionBgColor: #570300;
+$projectSectionBgColor: #004b57;
+$contactBgColor: rgb(26, 26, 26);
+$navbarFont: #949494;
+$welcomeSectionTitleFont: white;
+$welcomeSectionParagraphFont: #d6d6d6;
+$bodyBGColor: #545ba3;
+$linkedin: #007bb6;
+$github: #444;
+$whatsapp:#25D366;
+$codepen: #292b2c;
+$mail: #d9534f;
+
+$paddingTitle: 7rem;
+$SubtitleSizes: 5rem;
+
+
+//mixins
+@mixin margin-zero($up-down, $left-right) {
+    margin: 0 auto;
+    padding: $up-down $left-right;
+}

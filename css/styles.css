@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.804359) 17%, rgba(1, 1, 1, 0.571866) 44%, rgba(1, 1, 1, 0.249737) 67%, rgba(1, 1, 1, 0) 85%);
   z-index: 1; }
   .navbar ul {
@@ -122,10 +122,9 @@ body {
     transition: 0.5s;
     margin: 10px 40px;
     border-radius: 10px;
-    opacity: .7;
-    border: 2px solid rgba(0, 0, 0, 0); }
+    opacity: .8;
+    text-shadow: none; }
   .btn-group a:hover {
-    border: 2px solid rgba(0, 0, 0, 0.472);
     transform: scale(1.04, 1.04);
     opacity: 0.9;
     z-index: 0.9;
@@ -146,6 +145,11 @@ body {
 @media only screen and (max-width: 375px) {
   html {
     font-size: 50%; }
+  .navbar ul li {
+    margin: 0 auto;
+    padding: 0 1rem; }
+    .navbar ul li a {
+      font-size: 2.5rem; }
   .aboutMe p {
     font-size: 2rem; }
   .projects {
