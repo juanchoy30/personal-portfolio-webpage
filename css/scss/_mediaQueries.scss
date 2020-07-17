@@ -17,6 +17,11 @@
         }
     }
     .aboutMe {
+        .row {
+            #paragraph1 {
+                left: -300px;
+            }
+        }
         p {
             font-size: 2rem;
         }
@@ -51,6 +56,11 @@
         p {
             font-size: 2.3rem;
         }
+        .row {
+            #paragraph1 {
+                left: -400px;
+            }
+        }
     }
     .projects {
         p {
@@ -82,7 +92,12 @@
     .aboutMe {
         @include margin-zero($paddingTitle, 6rem);
         background-image: url("../img/about-little-screens-800.png") !important;
+        .row {
+            #paragraph1 {
+                left: -750px;
+            }
         }
+    }
     .projects {
         @include margin-zero($paddingTitle, 6rem);
         .project-tile{
@@ -127,6 +142,11 @@
     }
     .aboutMe {
         background: url("../img/hiclipart.com700.png") no-repeat right bottom, $aboutSectionBgColor;
+        .row {
+            #paragraph1 {
+                left: -800px;
+            }
+        }
     }
 }
 
@@ -136,6 +156,11 @@
     }
     .aboutMe {
         background: url("../img/hiclipart.com800.png") no-repeat right bottom, $aboutSectionBgColor;
+        .row {
+            #paragraph1 {
+                left: -900px;
+            }
+        }
     }
 }
 
@@ -157,6 +182,11 @@
     }
     .aboutMe {
         background: url("../img/hiclipart.com1000.png") no-repeat right bottom, $aboutSectionBgColor;
+        .row {
+            #paragraph1 {
+                left: -1000px;
+            }
+        }
     }
 }
 
@@ -166,5 +196,10 @@
     }
     .aboutMe {
         background: url("../img/hiclipart.com1100.png") no-repeat right bottom, $aboutSectionBgColor;
+        .row {
+            #paragraph1 {
+                left: -1300px;
+            }
+        }
     }
 }

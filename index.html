@@ -32,12 +32,12 @@
             <!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
             <section id="welcome-section" class="welcome-section">
                 <!-- User Story #2: The welcome section should have an h1 element that contains text. -->
-                <h1 id="title-name" class="hiddenFromPage">Juan M. Choy</h1>
-                <p id="welcome-paragraph" class="hiddenFromPage">Front End Web Developer</p>
+                <h1 id="title-name">Juan M. Choy</h1>
+                <p id="welcome-paragraph">Front End Web Developer</p>
             </section>
 
             <section id="about" class="aboutMe">
-                <h2>About Me</h2>
+                <h2 id="aboutTitle">About Me</h2>
                 <div class="row justify-content-between">
                     <div class="col-12 col-lg-6 align-self-lg-start" id="paragraph1">
                         <p class="mb-4">I strongly believe that I can help you achieve the web design you are looking for. I pay a thorough attention to detail and like to look for creative and innovative approaches of implementing solutions. I´m sure that working together will satisfy your business requirements.</p>
@@ -61,7 +61,7 @@
 
                 <div>
                     <div class="row">
-                        <div class="project-tile col-12 col-md-6 col-lg-4">
+                        <div id="recipes" class="project-tile col-12 col-md-6 col-lg-4">
                             <a href="https://raw.githack.com/juanchoy30/recetas-juan-cristina/master/dist/index.html" target="_blank">
                                 <div class="card">
                                     <img class="card-img-top" src="img/recetaslogo2.png" alt="Recetas de Cristina y Juan">
@@ -72,7 +72,7 @@
                             </a>
                         </div>
 
-                        <div class="project-tile col-12 col-md-6 col-lg-4">
+                        <div id="tribute" class="project-tile col-12 col-md-6 col-lg-4">
                             <a href="https://raw.githack.com/juanchoy30/tribute-page/master/dist/index.html" target="_blank">
                                 <div class="card">
                                     <img class="card-img-top" src="img/tributepage.PNG" alt="Tribute Web Page: Francisco Herrera Luque">
@@ -83,7 +83,7 @@
                             </a>
                         </div>
 
-                        <div class="project-tile col-12 col-md-6 col-lg-4">
+                        <div id="survey" class="project-tile col-12 col-md-6 col-lg-4">
                             <a href="https://raw.githack.com/juanchoy30/survey-form/master/dist/index.html" target="_blank">
                                 <div class="card">
                                     <img class="card-img-top" src="img/surveyForm.PNG" alt="Survey Form">
@@ -94,7 +94,7 @@
                             </a>
                         </div>
 
-                        <div class="project-tile col-12 col-md-6 col-lg-4">
+                        <div id="pixel" class="project-tile col-12 col-md-6 col-lg-4">
                             <a href="https://raw.githack.com/juanchoy30/product-landing-page/master/dist/index.html" target="_blank">
                                 <div class="card">
                                     <img class="card-img-top" src="img/pixeland.PNG" alt="Product Landing Web Page">
@@ -105,7 +105,7 @@
                             </a>
                         </div>
 
-                        <div class="project-tile col-12 col-md-6 col-lg-4">
+                        <div id="document" class="project-tile col-12 col-md-6 col-lg-4">
                             <a href="https://raw.githack.com/juanchoy30/technical-documentation-page/master/dist/index.html" target="_blank">
                                 <div class="card">
                                     <img class="card-img-top" src="img/documentationpage.PNG" alt="Technical Documentation Web Page: Fire Protection Systems">
@@ -116,7 +116,7 @@
                             </a>
                         </div>
 
-                        <div class="project-tile col-12 col-md-6 col-lg-4">
+                        <div id="more" class="project-tile col-12 col-md-6 col-lg-4">
                             <a class="see-more" href="https://github.com/juanchoy30" target="_blank">
                                 You can see more at my GitHub page...
                             </a>
@@ -149,7 +149,8 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="scripts/jquery-3.5.1.js"></script>
-        <script src="scripts/animations.js"></script>
+        <script src="scripts/gretingsAnimation.js"></script>
+        <script src="scripts/aboutAnimation.js"></script>
         <!-- endbuild -->
     </body>
 </html>

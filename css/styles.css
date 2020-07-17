@@ -150,6 +150,8 @@ body {
     padding: 0 1rem; }
     .navbar ul li a {
       font-size: 2.5rem; }
+  .aboutMe .row #paragraph1 {
+    left: -300px; }
   .aboutMe p {
     font-size: 2rem; }
   .projects {
@@ -177,6 +179,8 @@ body {
     background-image: url("../img/about-little-screens-500.png") no-repeat left top !important; }
     .aboutMe p {
       font-size: 2.3rem; }
+    .aboutMe .row #paragraph1 {
+      left: -400px; }
   .projects p {
     font-size: 2.3rem; }
   .contact .btn-group {
@@ -195,6 +199,8 @@ body {
     margin: 0 auto;
     padding: 7rem 6rem;
     background-image: url("../img/about-little-screens-800.png") !important; }
+    .aboutMe .row #paragraph1 {
+      left: -750px; }
   .projects {
     margin: 0 auto;
     padding: 7rem 6rem; }
@@ -227,13 +233,17 @@ body {
   .welcome-section {
     background: url("../img/welcome-bg-w1810.png") no-repeat left top, linear-gradient(90deg, black 9%, #3d3c3c 78%, #626262 100%); }
   .aboutMe {
-    background: url("../img/hiclipart.com700.png") no-repeat right bottom, #570300; } }
+    background: url("../img/hiclipart.com700.png") no-repeat right bottom, #570300; }
+    .aboutMe .row #paragraph1 {
+      left: -800px; } }
 
 @media only screen and (min-width: 1650px) {
   html {
     font-size: 75%; }
   .aboutMe {
-    background: url("../img/hiclipart.com800.png") no-repeat right bottom, #570300; } }
+    background: url("../img/hiclipart.com800.png") no-repeat right bottom, #570300; }
+    .aboutMe .row #paragraph1 {
+      left: -900px; } }
 
 @media only screen and (min-width: 1800px) {
   html {
@@ -247,13 +257,17 @@ body {
   html {
     font-size: 90%; }
   .aboutMe {
-    background: url("../img/hiclipart.com1000.png") no-repeat right bottom, #570300; } }
+    background: url("../img/hiclipart.com1000.png") no-repeat right bottom, #570300; }
+    .aboutMe .row #paragraph1 {
+      left: -1000px; } }
 
 @media only screen and (min-width: 2300px) {
   html {
     font-size: 100%; }
   .aboutMe {
-    background: url("../img/hiclipart.com1100.png") no-repeat right bottom, #570300; } }
+    background: url("../img/hiclipart.com1100.png") no-repeat right bottom, #570300; }
+    .aboutMe .row #paragraph1 {
+      left: -1300px; } }
 
 .hiddenFromPage {
   position: absolute;
