@@ -20,6 +20,7 @@ $(function() {
             $('#loading').remove();      // Clear message
         },
         success: function(data) {
+            data = data.reverse();
             var newContent = '';
             for ( var i = 0; i < data.length; i++ ) {
                 
