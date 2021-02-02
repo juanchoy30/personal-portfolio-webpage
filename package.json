@@ -29,7 +29,7 @@
   "devDependencies": {
     "cssmin": "^0.4.3",
     "htmlmin": "0.0.7",
-    "lite-server": "^2.5.4",
+    "lite-server": "^2.6.1",
     "node-sass": "^4.13.1",
     "onchange": "^6.1.0",
     "parallelshell": "^3.0.2",
@@ -38,9 +38,9 @@
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.6.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.0",
